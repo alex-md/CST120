@@ -9,7 +9,7 @@ header {
     background: purple;
     display: grid;
     margin: auto;
-  }
+}
 
 p {
     padding: 5%;
@@ -52,4 +52,8 @@ h2 {
 .logo {
     margin: auto;
     padding: 5%;
+}
+
+p > a {
+    color: blueviolet;
 }
