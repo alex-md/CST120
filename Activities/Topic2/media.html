@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Video and Audio Media</title>
+</head>
+
+<body>
+    <div align="center">
+        <!--
+            Embedded YouTube video
+            https://www.youtube.com/watch?v=JdVLnLKC-pk
+        -->
+        <h1>Video and Audio Media</h1>
+        <iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/JdVLnLKC-pk"
+            title="YouTube video player" width="560"></iframe>
+
+        <!--
+            Embedded video from local file
+            media/wisdom.mp4
+        -->
+        <h4>Grand Canyon University Doctrinal Statement</h4>
+        <video controls="" height="240" width="320">
+            <source src="media/wisdom.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video><br />
+        <!--
+            Embedded audio from local file
+            media/speech.mp3
+        -->
+        <h4 style="color: red">Student Support Video Clip</h4>
+        <audio controls="">
+            <source src="media/speech.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio><br />
+
+        <h4 style="color: red">Student Support Audio Clip</h4>
+
+        <a href="index.html">Back to Main Page</a>
+    </div>
+</body>
+
+</html>
