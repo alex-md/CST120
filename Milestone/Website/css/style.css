@@ -4,13 +4,13 @@ table {
 }
 
 td {
-/* Making the table have a border. */
+    /* Making the table have a border. */
     border-top: solid thin;
     border-left-style: solid;
 }
 
 .photo-grid {
-  /* Making the images wrap around the page. */
+    /* Making the images wrap around the page. */
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -54,22 +54,22 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: cornsilk;
-    margin: 0 auto;
+    margin: auto;
+    padding: 1;
 }
 
-h2 {
-/* Making the text purple, and making the text wrap around the page. */
+h4 {
     color: purple;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: space-between;
-    flex-wrap: wrap;
+    flex: auto;
+    text-align-last: auto;
+    min-width: 10em;
+    margin: auto;
 }
 
 .logo {
-/* Making the top portion of the page */
+    /* Making the top portion of the page */
     display: inline-flex;
     overflow: overlay;
     width: 100vw;
@@ -84,18 +84,65 @@ p > a {
 }
 
 .photo-grid-item {
-/* Making the images fit the page. */
+    /* Making the images fit the page. */
     display: contents;
     max-width: 100%;
     margin: 0 auto;
 }
 
 img {
-/* Making the images have a shadow, and making the images fit the page. */
+    /* Making the images have a shadow, and making the images fit the page. */
     box-shadow: -9px 7px 20px 0px #aaa;
     max-width: 20em;
     max-height: 13em;
     min-width: fit-content;
     min-height: 20em;
     margin: auto;
+}
+
+form {
+    background-color: #48105b;
+    color: #fff4d9;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 1.4em;
+    box-shadow: 0 0 20px 0px #000;
+    display: grid;
+    justify-items: start;
+}
+
+.contact-content {
+    border-radius: 1.4em;
+    margin: 0 auto;
+    display: grid;
+}
+
+nav {
+    margin: 0 auto;
+    display: contents;
+    font-weight: 400;
+}
+
+.contact-grid {
+    background-color: #e3e3e3;
+    margin: auto;
+    padding: 2em;
+    border-radius: 1.4em;
+    box-shadow: 0 1px 15px 0px;
+}
+
+.contact-item {
+    margin: 0;
+    padding: 1em;
+    border-bottom: solid thin #ccc;
+    display: flex;
+    flex-direction: row;
+}
+
+h6 {
+    padding: 1.4em;
+    margin: 0 auto;
+    color: #505050;
+    max-width: max-content;
+    font-size: large;
 }
