@@ -1,27 +1,26 @@
-table {
-    margin: 0 auto;
-    text-align: justify;
-}
-
-td {
-    /* Making the table have a border. */
-    border-top: solid thin;
-    border-left-style: solid;
-}
-
-.photo-grid {
-    /* Making the images wrap around the page. */
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 80%;
-    max-height: 100%;
-}
-
 body {
     margin: 0 auto;
     display: grid;
     justify-content: end;
+}
+
+/* Making the list items in the about page have a border, a shadow, and a border radius. */
+body > section > article:nth-child(5) > ul > li:nth-child(n) {
+    border-top: solid thick #ba68c8;
+    box-shadow: 0 3px 11px 0px #aaaddd;
+    border-bottom: solid thick #ce93d8;
+    border-radius: 0.3em;
+    color: #2196f3;
+    list-style: none;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    padding: 1em 1.5em;
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+    text-align: justify;
 }
 
 h2 {
@@ -33,7 +32,7 @@ h2 {
 }
 
 header {
-    background: purple;
+    background: #6a1b9a;
     display: grid;
     padding-bottom: 1.6em;
 }
@@ -50,20 +49,27 @@ h1 {
     margin: auto;
 }
 
+td {
+    /* Making the table have a border. */
+    border-top: solid thin;
+    border-left-style: solid;
+    color: #9c27b0;
+}
+
+.photo-grid {
+    /* Making the images wrap around the page. */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 80%;
+    max-height: 100%;
+}
+
 ul {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
     max-width: inherit;
-}
-
-body > section > article:nth-child(5) > ul > li:nth-child(n) {
-    color: #2196f3;
-    list-style: none;
-    border-left: solid 1px #cccccc;
-    border-right: solid 1px #cccccc;
-    padding: 1em 1.5em;
-    margin: 0 auto;
 }
 
 a {
@@ -88,13 +94,9 @@ h4 {
 
 .logo {
     /* Making the top portion of the page */
-    display: inline-flex;
-    overflow: overlay;
     width: 100vw;
-    border-bottom: solid;
-    padding-bottom: 1%;
-    background-color: rgb(72, 16, 91);
-    contain: size;
+    padding-bottom: 2em;
+    background-color: #4a148c;
 }
 
 p > a {
@@ -104,13 +106,14 @@ p > a {
 body > section > article:nth-child(5) > ul {
     max-width: 60%;
     margin: auto;
+    padding-top: 1em;
 }
 
 .photo-grid-item {
     /* Making the images fit the page. */
     display: contents;
     max-width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 img {
@@ -146,9 +149,8 @@ form {
 }
 
 nav {
-    margin: 0 auto;
     display: contents;
-    font-weight: 400;
+    font-size: larger;
 }
 
 .contact-grid {
@@ -173,6 +175,16 @@ h6 {
     color: #505050;
     max-width: max-content;
     font-size: large;
+}
+
+.home-img {
+    margin: 0 auto;
+    animation: fadeIn 2.2s;
+    box-shadow: 0 3px 21px 0px #aaaddd;
+    -webkit-animation: fadeIn 2.2s;
+    -moz-animation: fadeIn 2.2s;
+    -o-animation: fadeIn 2.2s;
+    -ms-animation: fadeIn 2.2s;
 }
 
 .contact-item > h6 {
@@ -233,11 +245,4 @@ h6 {
     100% {
         opacity: 1;
     }
-}
-
-body > section > article:nth-child(5) > ul > li:nth-child(n) {
-    border-top: solid thick #800080;
-    box-shadow: 0 3px 11px 0px #aaaddd;
-    border-bottom: solid thick #800080;
-    border-radius: 0.3em;
 }
