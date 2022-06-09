@@ -146,3 +146,35 @@ h6 {
     max-width: max-content;
     font-size: large;
 }
+
+.contact-item > h4 {
+    animation: fadeInDown 0.3s linear
+}
+
+.contact-item > h6 {
+    animation: fadeInDown 0.3s linear
+}
+
+.contact-item > h4 {
+    animation: fadeInDown 0.3s linear 0.1s
+}
+
+.contact-item > h6 {
+    animation: fadeInDown 0.3s linear 0.1s
+}
+
+.contact-item > h4 {
+    animation: fadeInDown 0.3s linear 0.2s
+}
+
+.contact-item > h6 {
+    animation: fadeInDown 0.3s linear 0.2s
+}
+
+.contact-item > h4 {
+    animation: fadeInDown 0.3s linear 0.3s
+}
+
+.contact-item > h6 {
+    animation: fadeInDown 0.3s linear 0.3s
+}
