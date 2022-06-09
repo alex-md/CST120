@@ -24,10 +24,18 @@ body {
     justify-content: end;
 }
 
+h2 {
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
 header {
     background: purple;
     display: grid;
-    margin: auto;
+    padding-bottom: 1.6em;
 }
 
 p {
@@ -46,11 +54,16 @@ ul {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
+    max-width: inherit;
 }
 
-li {
-    color: blueviolet;
+body > section > article:nth-child(5) > ul > li:nth-child(n) {
+    color: #2196f3;
     list-style: none;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    padding: 1em 1.5em;
+    margin: 0 auto;
 }
 
 a {
@@ -66,6 +79,11 @@ h4 {
     text-align-last: auto;
     min-width: 10em;
     margin: auto;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
 }
 
 .logo {
@@ -81,6 +99,11 @@ h4 {
 
 p > a {
     color: blueviolet;
+}
+
+body > section > article:nth-child(5) > ul {
+    max-width: 60%;
+    margin: auto;
 }
 
 .photo-grid-item {
@@ -109,6 +132,11 @@ form {
     box-shadow: 0 0 20px 0px #000;
     display: grid;
     justify-items: start;
+}
+
+/* Making the list markers transparent. */
+::marker {
+    color: transparent;
 }
 
 .contact-content {
@@ -147,34 +175,69 @@ h6 {
     font-size: large;
 }
 
-.contact-item > h4 {
-    animation: fadeInDown 0.3s linear
-}
-
 .contact-item > h6 {
-    animation: fadeInDown 0.3s linear
+    animation: fadeIn 5s;
 }
 
 .contact-item > h4 {
-    animation: fadeInDown 0.3s linear 0.1s
+    opacity: 0;
+    animation: fadeIn 3s 1.2s forwards;
+    /* Forwards is important to make sure the animation does not revert back to 0% opacity. */
 }
 
-.contact-item > h6 {
-    animation: fadeInDown 0.3s linear 0.1s
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.contact-item > h4 {
-    animation: fadeInDown 0.3s linear 0.2s
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.contact-item > h6 {
-    animation: fadeInDown 0.3s linear 0.2s
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.contact-item > h4 {
-    animation: fadeInDown 0.3s linear 0.3s
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.contact-item > h6 {
-    animation: fadeInDown 0.3s linear 0.3s
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body > section > article:nth-child(5) > ul > li:nth-child(n) {
+    border-top: solid thick #800080;
+    box-shadow: 0 3px 11px 0px #aaaddd;
+    border-bottom: solid thick #800080;
+    border-radius: 0.3em;
 }
