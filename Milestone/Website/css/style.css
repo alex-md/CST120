@@ -37,8 +37,10 @@ header {
     padding-bottom: 1.6em;
 }
 
-p {
+footer > p {
     padding: 5%;
+    text-align: right;
+    color: #aaa;
 }
 
 h1 {
@@ -74,9 +76,8 @@ ul {
 
 a {
     text-decoration: underline;
-    color: cornsilk;
+    color: #fafafa;
     margin: auto;
-    padding: 1;
 }
 
 h4 {
@@ -187,11 +188,11 @@ h6 {
     -ms-animation: fadeIn 2.2s;
 }
 
-.contact-item > h6 {
+.contact-item > h4 {
     animation: fadeIn 5s;
 }
 
-.contact-item > h4 {
+.contact-item > h6 {
     opacity: 0;
     animation: fadeIn 3s 1.2s forwards;
     /* Forwards is important to make sure the animation does not revert back to 0% opacity. */
@@ -245,4 +246,22 @@ h6 {
     100% {
         opacity: 1;
     }
+}
+
+article > p {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: justify;
+    color: #5c009e;
+    max-width: 70%;
+    box-shadow: 0 3px 21px 0px #aaaddd;
+}
+
+
+a.\>.a.h6 {
+    color: rgb(63, 50, 248);
+}
+
+.about > h1 {
+    padding-bottom: 1em;
 }
