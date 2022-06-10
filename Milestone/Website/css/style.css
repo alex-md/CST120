@@ -4,8 +4,9 @@ body {
     justify-content: end;
 }
 
-/* Making the list items in the about page have a border, a shadow, and a border radius. */
-body > section > article:nth-child(5) > ul > li:nth-child(n) {
+/* In the about page, selecting the 5th article in the section of the body, and then selecting the list items in that
+article. */
+body>section>article:nth-child(5)>ul>li:nth-child(n) {
     border-top: solid thick #ba68c8;
     box-shadow: 0 3px 11px 0px #aaaddd;
     border-bottom: solid thick #ce93d8;
@@ -37,7 +38,7 @@ header {
     padding-bottom: 1.6em;
 }
 
-footer > p {
+footer>p {
     padding: 5%;
     text-align: right;
     color: #aaa;
@@ -93,18 +94,19 @@ h4 {
     -ms-animation: fadeIn 5s;
 }
 
+/* Making the top portion of the page */
 .logo {
-    /* Making the top portion of the page */
     width: 100vw;
     padding-bottom: 2em;
     background-color: #4a148c;
 }
 
-p > a {
+p>a {
     color: blueviolet;
 }
 
-body > section > article:nth-child(5) > ul {
+/* Selecting the 5th article in the section of the body. */
+body>section>article:nth-child(5)>ul {
     max-width: 60%;
     margin: auto;
     padding-top: 1em;
@@ -127,18 +129,7 @@ img {
     margin: auto;
 }
 
-form {
-    background-color: #48105b;
-    color: #fff4d9;
-    margin: 0 auto;
-    padding: 2em;
-    border-radius: 1.4em;
-    box-shadow: 0 0 20px 0px #000;
-    display: grid;
-    justify-items: start;
-}
-
-/* Making the list markers transparent. */
+/* Making the list markers (bullets) transparent. */
 ::marker {
     color: transparent;
 }
@@ -178,6 +169,8 @@ h6 {
     font-size: large;
 }
 
+/* Making the image on the home page have a shadow, and making the
+image fit the page with an animation */
 .home-img {
     margin: 0 auto;
     animation: fadeIn 2.2s;
@@ -188,16 +181,19 @@ h6 {
     -ms-animation: fadeIn 2.2s;
 }
 
-.contact-item > h4 {
+.contact-item>h4 {
     animation: fadeIn 5s;
 }
 
-.contact-item > h6 {
+/* Forwards is important to make sure the animation does not revert back to 0% opacity. */
+.contact-item>h6 {
     opacity: 0;
     animation: fadeIn 3s 1.2s forwards;
-    /* Forwards is important to make sure the animation does not revert back to 0% opacity. */
+
 }
 
+/* Making the opacity of the element 0% at the start of the animation, and 100% at the end of the
+animation. */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -248,13 +244,13 @@ h6 {
     }
 }
 
-article > p {
+article>p {
     margin: 0 auto;
     padding: 1em;
     text-align: justify;
-    color: #5c009e;
+    color: #1a1a1a;
     max-width: 70%;
-    box-shadow: 0 3px 21px 0px #aaaddd;
+    box-shadow: -1px 1px 20px 13px #eee;
 }
 
 
@@ -262,6 +258,6 @@ a.\>.a.h6 {
     color: rgb(63, 50, 248);
 }
 
-.about > h1 {
+.about>h1 {
     padding-bottom: 1em;
 }
