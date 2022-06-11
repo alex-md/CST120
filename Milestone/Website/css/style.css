@@ -1,7 +1,8 @@
 body {
-    /*! margin:0 auto; */
-    /*! display:grid; */
-    /*! justify-content:end; */
+    margin:0 auto;
+    justify-content:end;
+    background-color:#fefefe;
+    overflow-x: hidden;
 }
 
 body>section>article:nth-child(5)>ul>li:nth-child(n) {
@@ -60,7 +61,7 @@ td {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 80%;
+    max-width: 80%
 }
 
 ul {
@@ -95,6 +96,11 @@ h4 {
     background-color: #4a148c
 }
 
+hr {
+	max-width: 70vw;
+	border: solid 1px #eee;
+}
+
 p>a {
     color: #8a2be2
 }
@@ -110,15 +116,13 @@ body>section>article:nth-child(5)>ul {
     max-width: 100%
 }
 
-/* A selector that selects all the images inside the divs with the class photo-grid-item inside the
-divs with the class photo-grid inside the body inside the html. */
 html body div.photo-grid div.photo-grid-item img {
-	box-shadow: -9px 7px 20px 0 #aaa;
-	margin: 0 auto;
-	max-width: 30%;
-	min-height: min-content;
-	margin-block: auto;
-	padding: 1%;
+    box-shadow: -9px 7px 20px 0 #aaa;
+    margin: 0 auto;
+    max-width: 30%;
+    min-height: min-content;
+    margin-block: auto;
+    padding: 1%
 }
 
 ::marker {
@@ -176,12 +180,20 @@ h6 {
 }
 
 .contact-item>h4 {
-    animation: fadeIn 5s
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s
 }
 
 .contact-item>h6 {
     opacity: 0;
-    animation: fadeIn 3s 1.2s forwards
+    animation: fadeIn 3s 1.2s forwards;
+    -webkit-animation: fadeIn 3s 1.2s forwards;
+    -moz-animation: fadeIn 3s 1.2s forwards;
+    -o-animation: fadeIn 3s 1.2s forwards;
+    -ms-animation: fadeIn 3s 1.2s forwards
 }
 
 article>p {
