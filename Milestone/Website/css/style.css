@@ -1,27 +1,25 @@
 body {
-    margin: 0 auto;
-    display: grid;
-    justify-content: end;
+    /*! margin:0 auto; */
+    /*! display:grid; */
+    /*! justify-content:end; */
 }
 
-/* In the about page, selecting the 5th article in the section of the body, and then selecting the list items in that
-article. */
 body>section>article:nth-child(5)>ul>li:nth-child(n) {
     border-top: solid thick #ba68c8;
-    box-shadow: 0 3px 11px 0px #aaaddd;
+    box-shadow: 0 3px 11px 0 #aaaddd;
     border-bottom: solid thick #ce93d8;
-    border-radius: 0.3em;
+    border-radius: .3em;
     color: #2196f3;
     list-style: none;
-    border-left: solid 1px #cccccc;
-    border-right: solid 1px #cccccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
     padding: 1em 1.5em;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 table {
     margin: 0 auto;
-    text-align: justify;
+    text-align: justify
 }
 
 h2 {
@@ -29,19 +27,19 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     max-width: 50%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 header {
     background: #6a1b9a;
     display: grid;
-    padding-bottom: 1.6em;
+    padding-bottom: 1.6em
 }
 
 footer>p {
     padding: 5%;
     text-align: right;
-    color: #aaa;
+    color: #aaa
 }
 
 h1 {
@@ -49,36 +47,33 @@ h1 {
     justify-content: center;
     align-content: center;
     color: purple;
-    margin: auto;
+    margin: auto
 }
 
 td {
-    /* Making the table have a border. */
     border-top: solid thin;
     border-left-style: solid;
-    color: #9c27b0;
+    color: #9c27b0
 }
 
 .photo-grid {
-    /* Making the images wrap around the page. */
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     max-width: 80%;
-    max-height: 100%;
 }
 
 ul {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    max-width: inherit;
+    max-width: inherit
 }
 
 a {
     text-decoration: underline;
     color: #fafafa;
-    margin: auto;
+    margin: auto
 }
 
 h4 {
@@ -91,59 +86,54 @@ h4 {
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s
 }
 
-/* Making the top portion of the page */
 .logo {
     width: 100vw;
     padding-bottom: 2em;
-    background-color: #4a148c;
+    background-color: #4a148c
 }
 
 p>a {
-    color: blueviolet;
+    color: #8a2be2
 }
 
-/* Selecting the 5th article in the section of the body. */
 body>section>article:nth-child(5)>ul {
     max-width: 60%;
     margin: auto;
-    padding-top: 1em;
+    padding-top: 1em
 }
 
 .photo-grid-item {
-    /* Making the images fit the page. */
     display: contents;
-    max-width: 100%;
-    /* margin: 0 auto; */
+    max-width: 100%
 }
 
-img {
-    /* Making the images have a shadow, and making the images fit the page. */
-    box-shadow: -9px 7px 20px 0px #aaa;
-    max-width: 20em;
-    max-height: 13em;
-    min-width: fit-content;
-    min-height: 20em;
-    margin: auto;
-    display: flex;
+/* A selector that selects all the images inside the divs with the class photo-grid-item inside the
+divs with the class photo-grid inside the body inside the html. */
+html body div.photo-grid div.photo-grid-item img {
+	box-shadow: -9px 7px 20px 0 #aaa;
+	margin: 0 auto;
+	max-width: 30%;
+	min-height: min-content;
+	margin-block: auto;
+	padding: 1%;
 }
 
-/* Making the list markers (bullets) transparent. */
 ::marker {
-    color: transparent;
+    color: transparent
 }
 
 .contact-content {
     border-radius: 1.4em;
     margin: 0 auto;
-    display: grid;
+    display: grid
 }
 
 nav {
     display: contents;
-    font-size: larger;
+    font-size: larger
 }
 
 .contact-grid {
@@ -151,7 +141,7 @@ nav {
     margin: auto;
     padding: 2em;
     border-radius: 1.4em;
-    box-shadow: 0 1px 15px 0px;
+    box-shadow: 0 1px 15px 0
 }
 
 .contact-item {
@@ -159,7 +149,7 @@ nav {
     padding: 1em;
     border-bottom: solid thin #ccc;
     display: flex;
-    flex-direction: row;
+    flex-direction: row
 }
 
 h6 {
@@ -167,12 +157,10 @@ h6 {
     margin: 0 auto;
     color: #505050;
     max-width: max-content;
-    font-size: large;
+    font-size: large
 }
 
-/* Making the image on the home page have a shadow, and making the
-image fit the page with an animation */
-.home-img > img {
+.home-img>img {
     box-shadow: -9px 7px 20px 0 #aaa;
     max-width: 35em;
     max-height: fit-content;
@@ -184,18 +172,16 @@ image fit the page with an animation */
     -webkit-animation: fadeIn 3s;
     -moz-animation: fadeIn 3s;
     -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s
 }
 
 .contact-item>h4 {
-    animation: fadeIn 5s;
+    animation: fadeIn 5s
 }
 
-/* Forwards is important to make sure the animation does not revert back to 0% opacity. */
 .contact-item>h6 {
     opacity: 0;
-    animation: fadeIn 3s 1.2s forwards;
-
+    animation: fadeIn 3s 1.2s forwards
 }
 
 article>p {
@@ -204,70 +190,67 @@ article>p {
     text-align: justify;
     color: #1a1a1a;
     max-width: 70%;
-    box-shadow: -1px 1px 20px 13px #eee;
+    box-shadow: -1px 1px 20px 13px #eee
 }
 
-
 a.\>.a.h6 {
-    color: rgb(63, 50, 248);
+    color: #3f32f8
 }
 
 .about>h1 {
-    padding-bottom: 1em;
+    padding-bottom: 1em
 }
 
 .body.\>.h1\:nth-child\(4\) {
-    padding-bottom: 1.5em;
+    padding-bottom: 1.5em
 }
 
-/* Making the opacity of the element 0% at the start of the animation, and 100% at the end of the
-animation. */
 @keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 0
     }
 
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @-moz-keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 0
     }
 
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @-webkit-keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 0
     }
 
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @-o-keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 0
     }
 
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @-ms-keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 0
     }
 
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
