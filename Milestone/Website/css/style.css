@@ -127,6 +127,7 @@ img {
     min-width: fit-content;
     min-height: 20em;
     margin: auto;
+    display: flex;
 }
 
 /* Making the list markers (bullets) transparent. */
@@ -171,14 +172,19 @@ h6 {
 
 /* Making the image on the home page have a shadow, and making the
 image fit the page with an animation */
-.home-img {
+.home-img > img {
+    box-shadow: -9px 7px 20px 0 #aaa;
+    max-width: 35em;
+    max-height: fit-content;
+    min-width: auto;
+    min-height: auto;
     margin: 0 auto;
-    animation: fadeIn 2.2s;
-    box-shadow: 0 3px 21px 0px #aaaddd;
-    -webkit-animation: fadeIn 2.2s;
-    -moz-animation: fadeIn 2.2s;
-    -o-animation: fadeIn 2.2s;
-    -ms-animation: fadeIn 2.2s;
+    display: flex;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
 }
 
 .contact-item>h4 {
@@ -190,6 +196,28 @@ image fit the page with an animation */
     opacity: 0;
     animation: fadeIn 3s 1.2s forwards;
 
+}
+
+article>p {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: justify;
+    color: #1a1a1a;
+    max-width: 70%;
+    box-shadow: -1px 1px 20px 13px #eee;
+}
+
+
+a.\>.a.h6 {
+    color: rgb(63, 50, 248);
+}
+
+.about>h1 {
+    padding-bottom: 1em;
+}
+
+.body.\>.h1\:nth-child\(4\) {
+    padding-bottom: 1.5em;
 }
 
 /* Making the opacity of the element 0% at the start of the animation, and 100% at the end of the
@@ -242,22 +270,4 @@ animation. */
     100% {
         opacity: 1;
     }
-}
-
-article>p {
-    margin: 0 auto;
-    padding: 1em;
-    text-align: justify;
-    color: #1a1a1a;
-    max-width: 70%;
-    box-shadow: -1px 1px 20px 13px #eee;
-}
-
-
-a.\>.a.h6 {
-    color: rgb(63, 50, 248);
-}
-
-.about>h1 {
-    padding-bottom: 1em;
 }
