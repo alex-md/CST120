@@ -1,0 +1,94 @@
+<!-- Add a JavaScript function named playjs() {} to <script > and </script> tags to the head tag of the page. Call the playjs() function from the body tag onload event handler (onload="playjs()"). Add any text in the body tag just so the page displays something -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 4 playjs</title>
+    <script>
+        function playjs() {
+            // Variables and assignments:
+            // Each statement ends with a semicolon
+            var age = 24; // Declare a variable named age and assign it a number
+            let name = "Alex"; // Declare a variable named name and assign it a string
+            // print the values to the console using the + string concatenation operator
+            console.log("My name is " + name);
+            console.log("I am " + age + " years old");
+
+            // MATH OPERATORS AND COMPARISON OPERATORS 
+            var number1 = 10; // Declare a new variable to hold a number 
+            var number2 = 5; // Declare a new variable to hold a number 
+            // Perform math operations and assign the result to variable 
+            var result = number1 + number2;
+            // Addition 
+            console.log("Addition result is " + result); result = number1 - number2;
+            // Subtraction 
+            console.log("Subtraction result is " + result); result = number1 * number2;
+            // Multiplication 
+            console.log("Multiplication result is " + result); result = number1 / number2;
+            // Division 
+            console.log("Division result is " + result); ++number1;
+            // Increment 
+            console.log("Increment result is " + number1); --number1;
+            // Decrement 
+            console.log("Decrement result is " + number1); result = number1 ** number2;
+            // Exponentiation 
+            console.log("Exponentiation result is " + result);
+            // Perform some comparison operators 
+            console.log("Equality for 10 is " + (number1 = 10));
+            console.log("Equality for 2 numbers " + (number1 = number2));
+            console.log("Equality for 2 numbers and type " + (number1 == number2));
+            console.log("Inequality for 2 numbers " + (number1 != number2));
+            console.log("Greater than for 2 numbers " + (number1 > number2));
+            console.log("Less than for 2 numbers " + (number1 < number2));
+
+
+            // STRINGS
+            // Basic strings
+            let string1 = 'A String enclosed in Single Quotes';
+            console.log("String with single quotes " + string1);
+            let string2 = "A String enclosed in Double Quotes";
+            console.log("String with double quotes " + string2);
+            let string3 = 'A String \'\"\\ needs to be escaped';
+            console.log("String with escaped chars " + string3);
+            let string4 = "A String \n on two lines";
+            console.log("String with a newline " + string4);
+
+            // Common String Methods
+            let string5 = "Grand Canyon University";
+            console.log("String length is " + string5.length);
+            console.log("String in upper case is " + string5.toUpperCase());
+            console.log("String in lower case is " + string5.toLowerCase());
+            console.log("Search for Grand is at " + string5.indexOf('Grand'));
+            console.log("Search for Canyon is at " + string5.indexOf('Canyon'));
+
+            // NUMBERS
+            let numberStr = "1";
+            let numberNum = 1;
+            console.log("numberStr variable is of type " + (typeof numberStr));
+            console.log("numberNum variable is of type " + (typeof numberNum));
+            console.log("Convert string to a number " + Number(numberStr));
+            console.log("Convert number to a string " + numberNum.toString());
+            console.log("Convert boolean to a number " + Number(false));
+            console.log("Convert invalid number to a number " + Number("AZ"));
+            console.log("Parse a int number string to a number " + parseInt("10"));
+            console.log("Parse a float number string to a number " + parseInt("10.5"));
+            console.log("Generate a random number " + Math.random());
+        }
+
+    </script>
+</head>
+
+<body onload="playjs()">
+
+    <body>
+        <p>Lieutenant Dan, what are you doing here?</p>
+        <p>I thought I'd try out my sea legs.</p>
+        <p>But you ain't got no legs, Lieutenant Dan.</p>
+        <p>Yes, I know that.</p>
+    </body>
+
+</html>
