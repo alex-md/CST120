@@ -6,9 +6,9 @@ body {
 }
 
 body>section>article:nth-child(5)>ul>li:nth-child(n) {
-    border-top: solid thick #ba68c8;
-    box-shadow: 0 3px 11px 0 #aaaddd;
-    border-bottom: solid thick #ce93d8;
+    border-top: solid thick #496a81ff;
+    box-shadow: 0 3px 11px 0 #505050;
+    border-bottom: solid thick #ffc482ff;
     border-radius: .3em;
     color: #2196f3;
     list-style: none;
@@ -32,29 +32,44 @@ h2 {
 }
 
 header {
-    background: #6a1b9a;
+    background: #496a81ff;
     display: grid;
-    padding-bottom: 1.6em
+    padding-bottom: 1em
 }
 
 footer>p {
     padding: 5%;
     text-align: right;
-    color: #aaa
+    color: #aaa;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #333;
+    margin: 0 auto;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     align-content: center;
-    color: purple;
-    margin: auto
+    color: #66999bff;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
 
 td {
     border-top: solid thin;
     border-left-style: solid;
-    color: #9c27b0
+    color: #496a81ff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .photo-grid {
@@ -78,7 +93,7 @@ a {
 }
 
 h4 {
-    color: purple;
+    color: #66999bff;
     flex: auto;
     text-align-last: auto;
     min-width: 10em;
@@ -93,18 +108,20 @@ h4 {
 .logo {
     width: 100vw;
     padding-bottom: 2em;
-    background-color: #4a148c
+    background-color: #2b3a67ff
 }
 
 hr {
 	max-width: 70vw;
-	border: solid 1px #eee;
+	border: solid thin #ccc;
+    box-shadow: 0 3px 20px 0px rgb(124, 124, 124);
 }
 
 p>a {
-    color: #8a2be2
+    color: #496a81ff;
 }
 
+/* Styling the unordered list in the fifth article of the section of the body. */
 body>section>article:nth-child(5)>ul {
     max-width: 60%;
     margin: auto;
@@ -116,6 +133,7 @@ body>section>article:nth-child(5)>ul {
     max-width: 100%
 }
 
+/* Styling the images in the photo grid. */
 html body div.photo-grid div.photo-grid-item img {
     box-shadow: -9px 7px 20px 0 #aaa;
     margin: 0 auto;
@@ -137,7 +155,9 @@ html body div.photo-grid div.photo-grid-item img {
 
 nav {
     display: contents;
-    font-size: larger
+    font-size: larger;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
 .contact-grid {
@@ -161,7 +181,8 @@ h6 {
     margin: 0 auto;
     color: #505050;
     max-width: max-content;
-    font-size: large
+    font-size: large;
+    font-family: 'Inter', sans-serif;
 }
 
 .home-img>img {
@@ -184,7 +205,9 @@ h6 {
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s
+    -ms-animation: fadeIn 5s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .contact-item>h6 {
@@ -193,7 +216,9 @@ h6 {
     -webkit-animation: fadeIn 3s 1.2s forwards;
     -moz-animation: fadeIn 3s 1.2s forwards;
     -o-animation: fadeIn 3s 1.2s forwards;
-    -ms-animation: fadeIn 3s 1.2s forwards
+    -ms-animation: fadeIn 3s 1.2s forwards;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 article>p {
@@ -217,6 +242,8 @@ a.\>.a.h6 {
     padding-bottom: 1.5em
 }
 
+
+/* -------------CSS animation---------------- */
 @keyframes fadeIn {
     0% {
         opacity: 0
@@ -266,3 +293,13 @@ a.\>.a.h6 {
         opacity: 1
     }
 }
+
+
+/* -------------CSS pallete---------------- */
+/* CSS HEX 
+--space-cadet: #2b3a67ff;
+--dark-electric-blue: #496a81ff;
+--cadet-blue: #66999bff;
+--sage: #b3af8fff;
+--mellow-apricot: #ffc482ff; 
+*/

@@ -77,6 +77,62 @@
             console.log("Parse a int number string to a number " + parseInt("10"));
             console.log("Parse a float number string to a number " + parseInt("10.5"));
             console.log("Generate a random number " + Math.random());
+
+            //ARRAYS
+            let shapes1 = ["circle", "square", "triangle"];
+            let shapes2 = new Array("circle", "square", "triangle");
+            console.log("First shape is " + shapes1[0]);
+            console.log("Last shape is " + shapes1[shapes1.length - 1]);
+            // Common Array Methods
+            shapes1.sort();
+            console.log("First shape in sorted order is " + shapes1[0]);
+            console.log("Last shape in sorted order is " + shapes1[shapes1.length - 1]);
+            shapes1.reverse();
+            console.log("First shape in reverse order is " + shapes1[0]);
+            console.log("Last shape in reverse order is " + shapes1[shapes1.length - 1]);
+            shapes1.push("rectangle");
+            console.log("Last shape is " + shapes1[shapes1.length - 1]);
+            shapes1.pop();
+            console.log("Last shape is " + shapes1[shapes1.length - 1]);
+            shapes1.splice(0, 0, "Oval");
+            console.log("First shape in spliced array is " + shapes1[0]);
+            // Iterate over an array
+            for (let shape of shapes1) {
+                console.log("Shape is " + shape);
+            }
+
+            // Dates and functions
+            let now = new Date();
+            let birthday = new Date("1998, 04, 11");
+            console.log("Today is " + now.toDateString());
+            console.log("Birthday is " + birthday.toDateString());
+            console.log("Time difference is " + (now.getTime() - birthday.getTime()));
+
+            // FUNCTIONS
+            reusableCode()
+            result = add(15, 20);
+            console.log("Addition result is " + result);
+            result = multiply(15, 20);
+            console.log("Multiplication result is " + result);
+            shapes1.forEach(displayShape);
+
+            function reusableCode() {
+                console.log("This is reusable code");
+            }
+
+            function add(number1, number2) {
+                console.log("Adding numbers " + number1 + " and " + number2);
+                return number1 + number2;
+            }
+
+            function multiply(number1, number2) {
+                console.log("Multiplying numbers " + number1 + " and " + number2);
+                return number1 * number2;
+            }
+
+            function displayShape(value, index) {
+                console.log("From displayShape function " + value + " at index " + index);
+            }
         }
 
     </script>
