@@ -232,20 +232,23 @@ article>p {
     box-shadow: -1px 1px 20px 13px #eee
 }
 
+/* Styling the h6 element in the contact section. */
 a.\>.a.h6 {
     color: #3f32f8
 }
 
+/* Styling the h1 element in the about section. */
 .about>h1 {
     padding-bottom: 1em
 }
 
+/* Styling the fourth h1 element in the body. */
 .body.\>.h1\:nth-child\(4\) {
     padding-bottom: 1.5em
 }
 
 
-/* -------------CSS animation---------------- */
+/* -----------------------------CSS animation-------------------------------- */
 @keyframes fadeIn {
     0% {
         opacity: 0
@@ -299,9 +302,9 @@ a.\>.a.h6 {
 
 /* -------------CSS pallete---------------- */
 /* CSS HEX 
---space-cadet: #2b3a67ff;
---dark-electric-blue: #496a81ff;
---cadet-blue: #66999bff;
---sage: #b3af8fff;
---mellow-apricot: #ffc482ff; 
+    --space-cadet: #2b3a67ff;
+    --dark-electric-blue: #496a81ff;
+    --cadet-blue: #66999bff;
+    --sage: #b3af8fff;
+    --mellow-apricot: #ffc482ff; 
 */
