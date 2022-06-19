@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Styling the unordered list in the fifth article of the section of the body. */
 body>section>article:nth-child(5)>ul>li:nth-child(n) {
     border-top: solid thick #496a81ff;
     box-shadow: 0 3px 11px 0 #505050;
@@ -98,6 +99,7 @@ h4 {
     text-align-last: auto;
     min-width: 10em;
     margin: auto;
+    /* A CSS animation. It is fading in the element. */
     animation: fadeIn 3s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
