@@ -3,6 +3,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,webstorm
 
 ### VisualStudioCode ###
+.DS_Store/*
+*/.DS_Store
+*/.DS_Store/*
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
