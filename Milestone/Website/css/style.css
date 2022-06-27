@@ -29,7 +29,8 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     max-width: 50%;
-    margin: 0 auto
+    margin: 0 auto;
+    color: #496a81ff;
 }
 
 header {
@@ -52,7 +53,7 @@ p {
     font-size: 1em;
     font-weight: 400;
     color: #333;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 h1 {
@@ -145,6 +146,7 @@ html body div.photo-grid div.photo-grid-item img {
     padding: 1%
 }
 
+/* Styling the marker of the list item. (the bullet point) */
 ::marker {
     color: transparent
 }
@@ -224,12 +226,12 @@ h6 {
 }
 
 article>p {
-    margin: 0 auto;
-    padding: 1em;
-    text-align: justify;
-    color: #1a1a1a;
-    max-width: 70%;
-    box-shadow: -1px 1px 20px 13px #eee
+	margin: 0 auto;
+	padding: 1em;
+	text-align: justify;
+	color: #3a3a3a;
+	max-width: 70%;
+	box-shadow: 0px 0px 0px 4px #eee;
 }
 
 /* Styling the h6 element in the contact section. */
@@ -245,6 +247,14 @@ a.\>.a.h6 {
 /* Styling the fourth h1 element in the body. */
 .body.\>.h1\:nth-child\(4\) {
     padding-bottom: 1.5em
+}
+
+/* Styling the second p tag in the footer (the view counter) */
+footer > p:nth-child(2) {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	text-decoration: underline;
+	margin-top: -10%;
 }
 
 
