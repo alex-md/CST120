@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Topic 6 - playjq3</title>
+</head>
+
+<body>
+    <table id="users" width="50%" border="1">
+        <thead>
+            <tr style="background-color: #A0A0A0">
+                <th width="33%">First name</th>
+                <th width="33%">Last name</th>
+                <th width="33%">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        // Create a JavaScript function called clicked() that simply displays an alert box with the message 'I was Clicked.'
+        function clicked() {
+            alert("I was Clicked.");
+        }
+
+        // Create a JavaScript function called displayUsers() with an empty code body.
+
+        // Within the displayUsers() function, create a User object and populate an users array with a number of Users:
+
+        // Define a user object with a constructor
+        function User(firstName, lastName, age) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+        }
+        // Define an array of users and initialize
+        var users = [];
+        users.push(new User("Forrest", "Gump", 38));
+        users.push(new User("Marshall", "Mathers", 49));
+        users.push(new User("Ned", "Flanders", 35));
+        users.push(new User("Marilyn", "Monroe", 44));
+
+        // Define a function to write all users into a table row
+        function displayUsers() {
+            // Dynamically create all the rows in the table (note: This could simply be done with innerHTML attribute versus using JQuery)
+            var x = 0                       // Row count
+            for (var user of users)         // Loop through the users array
+            {
+                var rowStyle = x & 1 ? "#FFFFFF" : "#F0F0F0"; // Alternate row colors
+
+                var markup = "<tr>" +
+                    "<td>" + user.firstName + "</td>" +
+                    "<td>" + user.lastName + "</td>" +
+                    "<td>" + user.age + "</td>" +
+                    "</tr>";
+
+                // Use JQuery append() to insert the row
+                $("#users").find("tbody").append(markup);
+                // User JQuery attr() to set the row ID
+                $("#users").find("tbody").find("tr").last().attr("id", x);
+                // User JQuery attr() to set the row align
+                $("#users").find("tbody").find("tr").last().attr("align", "center");
+                // User JQuery css() to set the row color
+                $("#users").find("tbody").find("tr").last().css("background-color", rowStyle);
+                // User JQuery To set the unique column 0 ID
+                $("#users").find("tbody").find("tr").last().find("td").get(0).id = x + "_0";
+                // User JQuery To set the unique column 1 ID
+                $("#users").find("tbody").find("tr").last().find("td").get(1).id = x + "_1";
+                // User JQuery To set the unique column 2 ID
+                $("#users").find("tbody").find("tr").last().find("td").get(2).id = x + "_2";
+                // Next row
+                x++;
+            }
+            // User JQuery bind() To set the click handler
+            $("#0_1").bind("click", clicked)
+        }
+        // Update our user table using JQuery
+        $(document).ready(displayUsers); // Display users when the document is ready
+    </script>
+
+</body>
+
+</html>
