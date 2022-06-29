@@ -1,7 +1,7 @@
 body {
-    margin:0 auto;
-    justify-content:end;
-    background-color:#fefefe;
+    margin: 0 auto;
+    justify-content: end;
+    background-color: #fefefe;
     overflow-x: hidden;
 }
 
@@ -108,6 +108,7 @@ h4 {
     -ms-animation: fadeIn 5s
 }
 
+/* Styling the top portion of the site. Purely aesthetic. */
 .logo {
     width: 100vw;
     padding-bottom: 2em;
@@ -115,8 +116,8 @@ h4 {
 }
 
 hr {
-	max-width: 70vw;
-	border: solid thin #ccc;
+    max-width: 70vw;
+    border: solid thin #ccc;
     box-shadow: 0 3px 20px 0px rgb(124, 124, 124);
 }
 
@@ -157,6 +158,7 @@ html body div.photo-grid div.photo-grid-item img {
     display: grid
 }
 
+/* Styling the navbar. */
 nav {
     display: contents;
     font-size: larger;
@@ -189,6 +191,7 @@ h6 {
     font-family: 'Inter', sans-serif;
 }
 
+/* Styling the home image */
 .home-img>img {
     box-shadow: -9px 7px 20px 0 #aaa;
     max-width: 35em;
@@ -226,12 +229,12 @@ h6 {
 }
 
 article>p {
-	margin: 0 auto;
-	padding: 1em;
-	text-align: justify;
-	color: #3a3a3a;
-	max-width: 70%;
-	box-shadow: 0px 0px 0px 4px #eee;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: justify;
+    color: #3a3a3a;
+    max-width: 70%;
+    box-shadow: 0px 0px 0px 4px #eee;
 }
 
 /* Styling the h6 element in the contact section. */
@@ -250,11 +253,11 @@ a.\>.a.h6 {
 }
 
 /* Styling the second p tag in the footer (the view counter) */
-footer > p:nth-child(2) {
-	font-family: 'Inter', sans-serif;
-	font-weight: 500;
-	text-decoration: underline;
-	margin-top: -10%;
+footer>p:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: -10%;
 }
 
 

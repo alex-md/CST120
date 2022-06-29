@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,18 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>About Me</title>
+    <title>Photo Gallery</title>
 </head>
-
 <body>
     <!-- Header -->
     <header>
         <!-- Site Logo (At this point its just some padding at the top that is purely aesthetic) -->
         <div class="logo"></div>
+
         <!-- Navigation -->
         <nav>
             <ul>
-                <!-- Linking the Home page to the index.html file. -->
+                <!-- Linking to the other pages. -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
@@ -32,42 +31,30 @@
             </ul>
         </nav>
     </header>
-    <!-- Content -->
-    <!-- Beginning with the about me content -->
-    <section class="about">
-        <br />
-        <br />
-        <h1>About Me</h1>
-        <article>
-            <p>
-                Hello, my name is Alex Johnson. I am a senior at GCU, and I
-                am currently pursuing my degree in computer information
-                systems. I am excited to learn more about web development
-                and how to create websites that are both functional and
-                aesthetically pleasing. I think the most challenging part of
-                this class will be not procrastinating, as that is how I got
-                here. However, I am willing to put in the work to learn, and
-                I am confident that I will be able to succeed in this class.
-            </p>
-            <br />
-            <hr />
-            <br />
-        </article>
-        <!-- Skills -->
-        <article>
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>C#</li>
-                <li>Java</li>
-            </ul>
-        </article>
-    </section>
     <br />
+    <!-- This is a header for the pictures I've taken -->
+    <h1>Pictures I've taken</h1> 
     <br />
+    <hr />
+    <br />
+
+    <!--Outter Grid -->
+    <div class="photo-grid">
+        <!-- Inner Grid -->
+        <div class="photo-grid-item">
+            <!-- Individual images -->
+            <img src="images/lake.jpeg" alt="Photo 10" />
+            <img src="images/sparks.png" alt="Photo 2" />
+            <img src="images/stop.JPG" alt="Photo 7" />
+            <img src="images/elden.jpeg" alt="Photo 3" />
+            <img src="images/portrait.jpg" alt="Photo 6" />
+            <img src="images/teton.JPG" alt="Photo 8" />
+            <img src="images/fence.JPG" alt="Photo 4" />
+            <img src="images/france.JPG" alt="Photo 5" />
+            <img src="images/truck.jpg" alt="Photo 9" />
+            <img src="images/20m.PNG" alt="Photo 1" />
+        </div>
+    </div>
     <!-- Footer -->
     <footer>
         <p style="text-align: right; color: #aaaaaa">
@@ -83,5 +70,4 @@
         <!-- Javascript link -->
         <script src="js/scripts.js"></script>
 </body>
-
 </html>
