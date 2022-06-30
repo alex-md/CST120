@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Video and Audio Media</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/mysite.css">
+        <style>
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+            .blink_me_alarm {
+                animation: blinker 2s step-start infinite;
+                color: red;
+            }
+
+            /* Add a new CSS transition algorithm: when you hover over an element, the element 
+will rotate 360 degrees as a div1 CSS class within the style tags. Also add CSS box 
+with an inline CSS set to the div1 CSS class that contains the text GCU is a great 
+university. The CSS Box with the text can be placed right below the audio clip. */
+
+            .div1 {
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                width: 300px;
+                height: 25px;
+                border: 1px solid #4f2fb6;
+            }
+
+            /* When you mouse over the div1 CSS class, the element will rotate 360 degrees. */
+            .div1:hover {
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div align="center">
+            <!--
+            Embedded YouTube video
+            https://www.youtube.com/watch?v=JdVLnLKC-pk
+        -->
+            <h1>Video and Audio Media</h1>
+            <iframe
+                allowfullscreen
+                frameborder="0"
+                height="315"
+                src="https://www.youtube.com/embed/JdVLnLKC-pk"
+                title="YouTube video player"
+                width="560"
+            ></iframe>
+
+            <!--
+            Embedded video from local file
+            media/wisdom.mp4
+        -->
+            <h4>Grand Canyon University Doctrinal Statement</h4>
+            <video controls="" height="240" width="320">
+                <source src="media/wisdom.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <br />
+            <!--
+            Embedded audio from local file
+            media/speech.mp3
+        -->
+            <h4 class="blink_me_alarm">Student Support Video Clip</h4>
+            <audio controls="">
+                <source src="media/speech.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+            <br />
+            <div class="div1">
+                    GCU is a great university.
+            </div>
+
+            <h4 class="blink_me_alarm">Student Support Audio Clip</h4>
+
+            <a href="index.html">Back to Main Page</a>
+        </div>
+    </body>
+</html>
