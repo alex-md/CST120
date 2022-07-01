@@ -2,57 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- BOOTSTRAP -->
     <title>My Website</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Site Logo (At this point its just some padding at the top that is purely aesthetic) -->
-        <div class="logo"></div>
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
-    <br />
-    <br />
-    <!-- Content -->
-    <h1>Welcome to my website!</h1>
-    <br />
-    <div class="home-img">
-        <img src="images/me.jpeg" alt="Alex Johnson" />
-    </div>
-    <br />
-    <!-- Footer -->
-    <footer>
-        <p style="text-align: right; color: #aaaaaa">
-            &copy; Alex Johnson 2022
-        </p>
-        <!-- view counter -->
-            <p style="text-align: right; color: #aaaaaa"> 
-                View Count:
-                <span id="view-count"></span>
-            </p>
-    </footer>
+<!-- Header -->
+<header>
+    <!-- Site Logo (At this point its just some padding at the top that is purely aesthetic) -->
+    <div class="logo"></div>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="images/logo.jpeg" height="90px" width="60px">
+            </a>
+        </div>
+      
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              Home
+            </a>
+      
+            <a class="navbar-item" href="about.html">
+              About
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="hobbies.html">
+                  Hobbies
+                </a>
+                <a class="navbar-item" href="gallery.html">
+                  Gallery
+                </a>
+                <a class="navbar-item" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+      <!-- End Navigation -->
+</header>
+<br/>
+<br/>
+<!-- Content -->
+<h1>Welcome to my website!</h1>
+<br/>
+<div class="home-img">
+    <img alt="Alex Johnson" src="images/me.jpeg"/>
+</div>
+<br/>
+<!-- Footer -->
+<footer>
+    <p style="text-align: right; color: #aaaaaa">
+        &copy; Alex Johnson 2022
+    </p>
+    <!-- view counter -->
+    <p style="text-align: right; color: #aaaaaa">
+        View Count:
+        <span id="view-count"></span>
+    </p>
+</footer>
 
-    <!-- Javascript link -->
-    <script src="js/scripts.js"></script>
+<!-- Javascript link -->
+<script src="js/scripts.js"></script>
 </body>
 
 </html>

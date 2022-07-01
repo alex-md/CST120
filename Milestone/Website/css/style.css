@@ -1,8 +1,33 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
 body {
     margin: 0 auto;
     justify-content: end;
     background-color: #fefefe;
     overflow-x: hidden;
+}
+
+.navbar-item, .navbar-item > *{
+    margin-left: 10px;
+    color: #8bcbff;
+}
+
+nav.navbar {
+    background: #496a81;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body > header > nav > ul {
+    padding-top: 1.5%;
+}
+
+/* Styling the hover effect of the navbar. */
+body>header>nav>ul>li>a:hover {
+    text-decoration: underline;
+    color: #ccc;
 }
 
 /* Styling the unordered list in the fifth article of the section of the body. */
@@ -18,10 +43,29 @@ body>section>article:nth-child(5)>ul>li:nth-child(n) {
     padding: 1em 1.5em;
     margin: 0 auto
 }
+tbody,td,tfoot,th,thead,tr {
+    padding: 1em;
+    border: inset;
+  }
 
 table {
+    width: fit-content;
     margin: 0 auto;
-    text-align: justify
+    box-shadow: 0 0 20px #ccc;
+    padding: 1em;
+}
+
+tr {
+    border: solid inset;
+}
+
+td {
+    border: solid inset;
+}
+
+th {
+    color: #496a81;
+    font-weight: bold;
 }
 
 h2 {
@@ -31,6 +75,12 @@ h2 {
     max-width: 50%;
     margin: 0 auto;
     color: #496a81ff;
+    font-size: x-large;;
+}
+
+/* h2 on hover underline text */
+h2:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -64,6 +114,12 @@ h1 {
     margin: auto;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
+    font-size: xx-large;
+}
+
+/* h1 on hover underline text */
+h1:hover {
+    text-decoration: underline;
 }
 
 td {
@@ -89,7 +145,7 @@ ul {
 }
 
 a {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #fafafa;
     margin: auto
 }
@@ -105,7 +161,6 @@ h4 {
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s
 }
 
 /* Styling the top portion of the site. Purely aesthetic. */
@@ -113,12 +168,6 @@ h4 {
     width: 100vw;
     padding-bottom: 2em;
     background-color: #2b3a67ff
-}
-
-hr {
-    max-width: 70vw;
-    border: solid thin #ccc;
-    box-shadow: 0 3px 20px 0px rgb(124, 124, 124);
 }
 
 p>a {
@@ -204,7 +253,6 @@ h6 {
     -webkit-animation: fadeIn 3s;
     -moz-animation: fadeIn 3s;
     -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s
 }
 
 .contact-item>h4 {
@@ -212,7 +260,6 @@ h6 {
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
@@ -223,7 +270,6 @@ h6 {
     -webkit-animation: fadeIn 3s 1.2s forwards;
     -moz-animation: fadeIn 3s 1.2s forwards;
     -o-animation: fadeIn 3s 1.2s forwards;
-    -ms-animation: fadeIn 3s 1.2s forwards;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
@@ -234,7 +280,7 @@ article>p {
     text-align: justify;
     color: #3a3a3a;
     max-width: 70%;
-    box-shadow: 0px 0px 0px 4px #eee;
+    box-shadow: 0 0 0 4px #eee;
 }
 
 /* Styling the h6 element in the contact section. */
@@ -313,11 +359,11 @@ footer>p:nth-child(2) {
 }
 
 
-/* -------------CSS pallete---------------- */
-/* CSS HEX 
+/* -------------CSS palette---------------- */
+/* CSS HEX
     --space-cadet: #2b3a67ff;
     --dark-electric-blue: #496a81ff;
     --cadet-blue: #66999bff;
     --sage: #b3af8fff;
-    --mellow-apricot: #ffc482ff; 
+    --mellow-apricot: #ffc482ff;
 */
