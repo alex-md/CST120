@@ -2,6 +2,8 @@ body {
     margin-top: 20px;
     margin-left: 20px;
     background: rgb(231, 229, 229);
+    padding: 1em;
+    margin: 0 auto;
 }
 
 h1 {
