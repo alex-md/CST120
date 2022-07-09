@@ -49,7 +49,7 @@ footer>p {
 }
 
 p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1em;
     font-weight: 400;
     color: #333;
@@ -118,7 +118,7 @@ h4 {
 hr {
     max-width: 70vw;
     border: solid thin #ccc;
-    box-shadow: 0 3px 20px 0px rgb(124, 124, 124);
+    box-shadow: 0 3px 20px 0 rgb(124, 124, 124);
 }
 
 p>a {
@@ -234,7 +234,7 @@ article>p {
     text-align: justify;
     color: #3a3a3a;
     max-width: 70%;
-    box-shadow: 0px 0px 0px 4px #eee;
+    box-shadow: 0 0 0 4px #eee;
 }
 
 /* Styling the h6 element in the contact section. */
@@ -313,7 +313,7 @@ footer>p:nth-child(2) {
 }
 
 
-/* -------------CSS pallete---------------- */
+/* -------------CSS palette---------------- */
 /* CSS HEX 
     --space-cadet: #2b3a67ff;
     --dark-electric-blue: #496a81ff;
