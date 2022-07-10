@@ -1,9 +1,10 @@
 body {
     margin-top: 20px;
     margin-left: 20px;
-    background: rgb(231, 229, 229);
+    background: #fafafa;
     padding: 1em;
     margin: 0 auto;
+    max-width: 80%;
 }
 
 h1 {
@@ -53,7 +54,7 @@ p {
 
 a {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(221, 94, 20);
+    color: #348aec;
     text-decoration: none;
     text-align: center;
 }
