@@ -1,4 +1,4 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import 'https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css';
 
 body {
     margin: 0 auto;
@@ -7,7 +7,33 @@ body {
     overflow-x: hidden;
 }
 
-.navbar-item, .navbar-item > *{
+.navbar-menu {
+    display: inline-flex;
+    padding-right: 3em;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: #496a81;
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar, .navbar-end, .navbar-menu, .navbar-start {
+        align-items: baseline;
+    }
+}
+
+.navbar-item, .navbar-item > * {
     margin-left: 10px;
     color: #8bcbff;
 }
@@ -25,13 +51,13 @@ body > header > nav > ul {
 }
 
 /* Styling the hover effect of the navbar. */
-body>header>nav>ul>li>a:hover {
+body > header > nav > ul > li > a:hover {
     text-decoration: underline;
     color: #ccc;
 }
 
 /* Styling the unordered list in the fifth article of the section of the body. */
-body>section>article:nth-child(5)>ul>li:nth-child(n) {
+body > section > article:nth-child(5) > ul > li:nth-child(n) {
     border-top: solid thick #496a81ff;
     box-shadow: 0 3px 11px 0 #505050;
     border-bottom: solid thick #ffc482ff;
@@ -41,11 +67,15 @@ body>section>article:nth-child(5)>ul>li:nth-child(n) {
     border-left: solid 1px #ccc;
     border-right: solid 1px #ccc;
     padding: 1em 1.5em;
-    margin: 0 auto
+    margin: 0 auto;
+
 }
-tbody,td,tfoot,th,thead,tr {
+
+tbody, td, tfoot, th, thead, tr {
     padding: 1em;
-    border: inset;
+    box-shadow: 0 0 2px #fefefe;
+    border-radius: .3em;
+
 }
 
 table {
@@ -53,14 +83,15 @@ table {
     margin: 0 auto;
     box-shadow: 0 0 20px #ccc;
     padding: 1em;
+    border-radius: .3em;
 }
 
 tr {
-    border: solid inset;
+    border: inset thin #496a81;
 }
 
 td {
-    border: solid inset;
+    border: inset thin #496a81;
 }
 
 th {
@@ -89,7 +120,7 @@ header {
     padding-bottom: 1em
 }
 
-footer>p {
+footer > p {
     padding: 5%;
     text-align: right;
     color: #aaa;
@@ -170,12 +201,12 @@ h4 {
     background-color: #2b3a67ff
 }
 
-p>a {
+p > a {
     color: #496a81ff;
 }
 
 /* Styling the unordered list in the fifth article of the section of the body. */
-body>section>article:nth-child(5)>ul {
+body > section > article:nth-child(5) > ul {
     max-width: 60%;
     margin: auto;
     padding-top: 1em
@@ -241,7 +272,7 @@ h6 {
 }
 
 /* Styling the home image */
-.home-img>img {
+.home-img > img {
     box-shadow: -9px 7px 20px 0 #aaa;
     max-width: 35em;
     max-height: fit-content;
@@ -255,7 +286,7 @@ h6 {
     -o-animation: fadeIn 3s;
 }
 
-.contact-item>h4 {
+.contact-item > h4 {
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
@@ -264,7 +295,7 @@ h6 {
     font-weight: 700;
 }
 
-.contact-item>h6 {
+.contact-item > h6 {
     opacity: 0;
     animation: fadeIn 3s 1.2s forwards;
     -webkit-animation: fadeIn 3s 1.2s forwards;
@@ -274,7 +305,7 @@ h6 {
     font-weight: 400;
 }
 
-article>p {
+article > p {
     margin: 0 auto;
     padding: 1em;
     text-align: justify;
@@ -289,7 +320,7 @@ a.\>.a.h6 {
 }
 
 /* Styling the h1 element in the about section. */
-.about>h1 {
+.about > h1 {
     padding-bottom: 1em
 }
 
@@ -299,7 +330,7 @@ a.\>.a.h6 {
 }
 
 /* Styling the second p tag in the footer (the view counter) */
-footer>p:nth-child(2) {
+footer > p:nth-child(2) {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     text-decoration: underline;
