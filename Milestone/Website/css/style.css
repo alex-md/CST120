@@ -48,28 +48,28 @@ body {
     flex-direction: row;
     align-items: baseline;
     max-width: min-content;
-  }
-  
-  /* https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css */
-  
-  body {
+}
+
+/* https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css */
+
+body {
     /* color: #4a4a4a; */
     color: #a5a5a5;
     /* line-height: 1.5 */
     line-height: 1.5;
-  }
-  
-  
-
-.image {
-	margin: 0 auto;
-	transition: transform .1s cubic-bezier(0.4, 0, 1, 1);
-	display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: wrap;
 }
 
-img > .image {
+
+
+.image {
+    margin: 0 auto;
+    transition: transform .1s cubic-bezier(0.4, 0, 1, 1);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+img>.image {
     width: 100%;
     height: 100%;
     object-fit: fill;

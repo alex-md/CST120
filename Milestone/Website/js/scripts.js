@@ -6,7 +6,7 @@ function RunFunctions() {
 }
 
 // function that adds a view count to the bottom of the page. Use localStorage to store the view count. The view count
-// will increment randomly between 1 and 188 every time a page is loaded.
+// will increment randomly between 1 and 8 every time a page is loaded.
 function IncreaseViews() {
     // first generate a random number between 1 and 8
     let randomNumber = Math.floor(Math.random() + 8) + 1;
