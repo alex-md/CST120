@@ -1,3 +1,4 @@
+/* Importing the bulma css framework. */
 @import 'https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css';
 
 body {
@@ -15,6 +16,7 @@ body {
     flex-direction: column;
 }
 
+/* Styles the navbar menu when the screen is less than 1023px. */
 @media screen and (max-width: 1023px) {
     .navbar-menu {
         background-color: #496a81;
@@ -27,13 +29,62 @@ body {
     }
 }
 
+/* Aligning the items in the navbar to the baseline when the screen is less than 1024px. */
 @media screen and (min-width: 1024px) {
-    .navbar, .navbar-end, .navbar-menu, .navbar-start {
+
+    .navbar,
+    .navbar-end,
+    .navbar-menu,
+    .navbar-start {
         align-items: baseline;
     }
 }
 
-.navbar-item, .navbar-item > * {
+/* http://127.0.0.1:3000/Milestone/Website/css/style.css */
+
+.contact-grid {
+    /* fill: none; */
+    /* display: flex; */
+    flex-direction: row;
+    align-items: baseline;
+    max-width: min-content;
+  }
+  
+  /* https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css */
+  
+  body {
+    /* color: #4a4a4a; */
+    color: #a5a5a5;
+    /* line-height: 1.5 */
+    line-height: 1.5;
+  }
+  
+  
+
+.image {
+	margin: 0 auto;
+	transition: transform .1s cubic-bezier(0.4, 0, 1, 1);
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+}
+
+img > .image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: transform .8s ease;
+
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
+
+
+
+.navbar-item,
+.navbar-item>* {
     margin-left: 10px;
     color: #8bcbff;
 }
@@ -46,18 +97,18 @@ nav.navbar {
     flex-wrap: wrap;
 }
 
-body > header > nav > ul {
+body>header>nav>ul {
     padding-top: 1.5%;
 }
 
 /* Styling the hover effect of the navbar. */
-body > header > nav > ul > li > a:hover {
+body>header>nav>ul>li>a:hover {
     text-decoration: underline;
     color: #ccc;
 }
 
 /* Styling the unordered list in the fifth article of the section of the body. */
-body > section > article:nth-child(5) > ul > li:nth-child(n) {
+body>section>article:nth-child(5)>ul>li:nth-child(n) {
     border-top: solid thick #496a81ff;
     box-shadow: 0 3px 11px 0 #505050;
     border-bottom: solid thick #ffc482ff;
@@ -71,7 +122,12 @@ body > section > article:nth-child(5) > ul > li:nth-child(n) {
 
 }
 
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
     padding: 1em;
     box-shadow: 0 0 2px #fefefe;
     border-radius: .3em;
@@ -106,7 +162,8 @@ h2 {
     max-width: 50%;
     margin: 0 auto;
     color: #496a81ff;
-    font-size: x-large;;
+    font-size: x-large;
+    ;
 }
 
 /* h2 on hover underline text */
@@ -117,20 +174,20 @@ h2:hover {
 header {
     background: #496a81ff;
     display: grid;
-    padding-bottom: 1em
+    padding-bottom: 1em;
 }
 
-footer > p {
+footer>p {
     padding: 5%;
     text-align: right;
     color: #aaa;
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.9em;
     font-weight: 300;
 }
 
 p {
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     font-weight: 400;
     color: #333;
@@ -143,7 +200,7 @@ h1 {
     align-content: center;
     color: #66999bff;
     margin: auto;
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: xx-large;
 }
@@ -157,7 +214,7 @@ td {
     border-top: solid thin;
     border-left-style: solid;
     color: #496a81ff;
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
 }
 
@@ -165,20 +222,20 @@ td {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 80%
+    max-width: 80%;
 }
 
 ul {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    max-width: inherit
+    max-width: inherit;
 }
 
 a {
     /* text-decoration: underline; */
     color: #fafafa;
-    margin: auto
+    margin: auto;
 }
 
 h4 {
@@ -188,33 +245,33 @@ h4 {
     min-width: 10em;
     margin: auto;
     /* A CSS animation. It is fading in the element. */
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
+    animation: fadeIn 1.4s;
+    -webkit-animation: fadeIn 1.4s;
+    -moz-animation: fadeIn 1.4s;
+    -o-animation: fadeIn 1.4s;
 }
 
 /* Styling the top portion of the site. Purely aesthetic. */
 .logo {
     width: 100vw;
     padding-bottom: 2em;
-    background-color: #2b3a67ff
+    background-color: #2b3a67ff;
 }
 
-p > a {
+p>a {
     color: #496a81ff;
 }
 
 /* Styling the unordered list in the fifth article of the section of the body. */
-body > section > article:nth-child(5) > ul {
+body>section>article:nth-child(5)>ul {
     max-width: 60%;
     margin: auto;
-    padding-top: 1em
+    padding-top: 1em;
 }
 
 .photo-grid-item {
     display: contents;
-    max-width: 100%
+    max-width: 100%;
 }
 
 /* Styling the images in the photo grid. */
@@ -224,25 +281,25 @@ html body div.photo-grid div.photo-grid-item img {
     max-width: 30%;
     min-height: min-content;
     margin-block: auto;
-    padding: 1%
+    padding: 1%;
 }
 
 /* Styling the marker of the list item. (the bullet point) */
 ::marker {
-    color: transparent
+    color: transparent;
 }
 
 .contact-content {
     border-radius: 1.4em;
     margin: 0 auto;
-    display: grid
+    display: grid;
 }
 
 /* Styling the navbar. */
 nav {
     display: contents;
     font-size: larger;
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
 }
 
@@ -251,7 +308,8 @@ nav {
     margin: auto;
     padding: 2em;
     border-radius: 1.4em;
-    box-shadow: 0 1px 15px 0
+    box-shadow: 0 1px 15px 0;
+    fill: none;
 }
 
 .contact-item {
@@ -259,7 +317,7 @@ nav {
     padding: 1em;
     border-bottom: solid thin #ccc;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
 }
 
 h6 {
@@ -268,11 +326,11 @@ h6 {
     color: #505050;
     max-width: max-content;
     font-size: large;
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Styling the home image */
-.home-img > img {
+.home-img>img {
     box-shadow: -9px 7px 20px 0 #aaa;
     max-width: 35em;
     max-height: fit-content;
@@ -286,26 +344,31 @@ h6 {
     -o-animation: fadeIn 3s;
 }
 
-.contact-item > h4 {
+.navbar-item img {
+    min-width: 0.75rem;
+    max-height: 5em;
+}
+
+.contact-item>h4 {
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
 
-.contact-item > h6 {
+.contact-item>h6 {
     opacity: 0;
     animation: fadeIn 3s 1.2s forwards;
     -webkit-animation: fadeIn 3s 1.2s forwards;
     -moz-animation: fadeIn 3s 1.2s forwards;
     -o-animation: fadeIn 3s 1.2s forwards;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
 }
 
-article > p {
+article>p {
     margin: 0 auto;
     padding: 1em;
     text-align: justify;
@@ -316,22 +379,22 @@ article > p {
 
 /* Styling the h6 element in the contact section. */
 a.\>.a.h6 {
-    color: #3f32f8
+    color: #3f32f8;
 }
 
 /* Styling the h1 element in the about section. */
-.about > h1 {
-    padding-bottom: 1em
+.about>h1 {
+    padding-bottom: 1em;
 }
 
 /* Styling the fourth h1 element in the body. */
 .body.\>.h1\:nth-child\(4\) {
-    padding-bottom: 1.5em
+    padding-bottom: 1.5em;
 }
 
 /* Styling the second p tag in the footer (the view counter) */
-footer > p:nth-child(2) {
-    font-family: 'Inter', sans-serif;
+footer>p:nth-child(2) {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
     text-decoration: underline;
     margin-top: -10%;
@@ -341,51 +404,51 @@ footer > p:nth-child(2) {
 /* -----------------------------CSS animation-------------------------------- */
 @keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-moz-keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-o-keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-ms-keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
